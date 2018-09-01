@@ -5,7 +5,7 @@ import queryString from 'query-string';
 
 let defaultStyle = {
   color: '#fff',
-  'font-family': 'Papyrus'
+  'font-family': 'Arial'
 };
 let counterStyle = {...defaultStyle, 
   width: "40%", 
@@ -185,7 +185,7 @@ class App extends Component {
         </div> : <button onClick={() => {
             window.location = window.location.href.includes('localhost') 
               ? 'http://localhost:8888/login' 
-              : 'https://better-playlists-backend.herokuapp.com/login' }
+              : 'https://playlists-by-benny-backend.herokuapp.com/callback' }
           }
           style={{padding: '20px', 'font-size': '50px', 'margin-top': '20px'}}>Sign in with Spotify</button>
         }
